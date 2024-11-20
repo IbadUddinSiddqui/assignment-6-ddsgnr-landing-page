@@ -1,27 +1,26 @@
-import React from 'react'
+import React from 'react';
 
 const SponsorSection = () => {
   return (
-    <div className='w-screen h-auto bg-[#F7F7F7] flex flex-col md:flex-row  items-center px-6 py-12'>
+    <div className="w-screen h-auto bg-[#F7F7F7] flex flex-col md:flex-row items-center px-6 py-12">
       {/* Left Section (Text) */}
-      <div className='w-screen'>
-        <p className='font-roboto font-bold text-[20px] md:text-[24px] text-center md:text-left'>
+      <div className="w-full md:w-1/4 flex items-center text-center md:text-left">
+        <p className="font-roboto font-bold mx-28  md:mx-1 text-[20px] md:text-[24px] px-4 md:px-6 lg:px-8">
           Trusted by 2000+ companies <br /> worldwide.
         </p>
       </div>
 
       {/* Right Section (Logos) */}
-      <div className=' mr-4 w-full flex flex-wrap overflow-hidden md:flex-nowrap justify-center md:justify-between mt-6 md:mt-0'>
-        <img src="/Airbnb.svg" alt="logo1" width="150px" height="50px" className='mx-4 mb-4 md:mb-0' />
-        <img src="/Airbnb2.svg" alt="logo2" width="150px" height="50px" className='mx-4 mb-4 md:mb-0' />
-        <img src="/Airbnb3.svg" alt="logo3" width="150px" height="50px" className='mx-4 mb-4 md:mb-0' />
-        <img src="/Airbnb4.svg" alt="logo4" width="150px" height="50px" className='mx-4 mb-4 md:mb-0' />
-        <img src="/Airbnb5.svg" alt="logo5" width="150px" height="50px" className='mx-4 mb-4 md:mb-0' />
-        <img src="/Airbnb6.svg" alt="logo6" width="150px" height="50px" className='mx-4 mb-4 md:mb-0' />
-      </div>y
-      
+      <div className="w-full md:w-3/4 flex overflow-hidden justify-center items-center gap-4 md:gap-6 mt-6 md:mt-0">
+        <img src="/Airbnb.svg" alt="logo1" width="150px" height="50px" />
+        <img src="/Airbnb2.svg" alt="logo2" width="150px" height="50px" />
+        <img src="/Airbnb3.svg" alt="logo3" width="150px" height="50px" />
+        <img src="/Airbnb4.svg" alt="logo4" width="150px" height="50px" />
+        <img src="/Airbnb5.svg" alt="logo5" width="150px" height="50px" />
+        <img src="/Airbnb6.svg" alt="logo6" width="150px" height="50px" />
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default SponsorSection
+export default SponsorSection;
