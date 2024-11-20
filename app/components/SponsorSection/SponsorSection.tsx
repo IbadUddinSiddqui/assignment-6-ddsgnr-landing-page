@@ -4,8 +4,8 @@ const SponsorSection = () => {
   return (
     <div className='w-screen h-auto bg-[#F7F7F7] flex flex-col md:flex-row  items-center px-6 py-12'>
       {/* Left Section (Text) */}
-      <div className='w-96'>
-        <p className='font-roboto font-bold text-[24px] text-center md:text-left'>
+      <div className='w-screen'>
+        <p className='font-roboto font-bold text-[20px] md:text-[24px] text-center md:text-left'>
           Trusted by 2000+ companies <br /> worldwide.
         </p>
       </div>

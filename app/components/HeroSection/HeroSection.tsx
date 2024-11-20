@@ -30,7 +30,7 @@ const HeroSection = () => {
 
       {/* Right Section (Image) */}
       <div className="w-full h-auto overflow-hidden flex justify-center items-center">
-        <img src="/hero.png" alt="hero" className="w-full h-full object-cover object-top sm:h-[]" />
+        <img src="/hero.svg" alt="hero" className="w-full h-full object-cover object-top sm:h-[]" />
       </div>
     </section>
   );
