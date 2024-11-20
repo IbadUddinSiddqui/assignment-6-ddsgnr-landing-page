@@ -20,7 +20,7 @@ const Header = () => {
           <Image src="/Facebook.svg" alt="facebook" width={24} height={24} />
           <Image src="/Instagram.svg" alt="instagram" width={24} height={24} />
           <Image src="/Twitter.svg" alt="twitter" width={24} height={24} />
-          <Image src="/Linkedin.svg" alt="linkedin" width={24} height={24} />
+          <Image src="/LinkedIn.svg" alt="linkedin" width={24} height={24} />
         </div>
       </div>
 
