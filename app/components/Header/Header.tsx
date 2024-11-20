@@ -66,14 +66,14 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMenu && (
-          <div className="fixed inset-0 bg-white z-50 p-4">
+          <div className="fixed inset-0 bg-white z-50 p-4 flex">
             <button
               onClick={handleMenu}
               className="absolute top-4 right-4 text-2xl font-bold"
             >
               ✕
             </button>
-            <nav className="mt-12 space-y-4">
+            <nav className="mt-12 space-y-4 ">
               {["Home", "Courses", "Services", "Achievements", "About Us", "Testimonial"].map((item) => (
                 <Link href={`/${item.toLowerCase().replace(" ", "")}`} key={item}>
                   <span className="relative text-lg font-medium text-gray-700 cursor-pointer group block">

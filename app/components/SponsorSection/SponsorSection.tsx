@@ -2,9 +2,9 @@ import React from 'react';
 
 const SponsorSection = () => {
   return (
-    <div className="w-screen h-auto bg-[#F7F7F7] flex flex-col md:flex-row items-center px-6 py-12">
+    <div className="max-w-screen h-auto bg-[#F7F7F7] flex flex-col md:flex-row items-center px-6 py-12">
       {/* Left Section (Text) */}
-      <div className="w-full md:w-1/4 flex items-center text-center md:text-left">
+      <div className="w-full max-w-[100%] md:w-1/4 flex items-center text-center md:text-left">
         <p className="font-roboto font-bold mx-28  md:mx-1 text-[20px] md:text-[24px] px-4 md:px-6 lg:px-8">
           Trusted by 2000+ companies <br /> worldwide.
         </p>
