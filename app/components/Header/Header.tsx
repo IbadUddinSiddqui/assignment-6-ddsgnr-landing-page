@@ -66,14 +66,14 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMenu && (
-          <div className="fixed inset-0 bg-white z-50 p-4 flex">
+          <div className="fixed inset-0 bg-white z-50 p-4   items-center   flex flex-col">
             <button
               onClick={handleMenu}
               className="absolute top-4 right-4 text-2xl font-bold"
             >
               ✕
             </button>
-            <nav className="mt-12 space-y-4 ">
+            <nav className="mt-12 space-y-4 text-center ">
               {["Home", "Courses", "Services", "Achievements", "About Us", "Testimonial"].map((item) => (
                 <Link href={`/${item.toLowerCase().replace(" ", "")}`} key={item}>
                   <span className="relative text-lg font-medium text-gray-700 cursor-pointer group block">
@@ -83,18 +83,19 @@ const Header = () => {
                 </Link>
               ))}
             </nav>
-            <div className="mt-8 flex flex-col space-y-4">
-              <Link href="/loginpage">
-                <button className="border border-black px-6 py-3 rounded-lg hover:bg-black hover:text-white">
-                  Login
-                </button>
-              </Link>
-              <Link href="/signuppage">
-                <button className="bg-black text-white px-6 py-3 rounded-lg hover:bg-white hover:text-black border border-black">
-                  Signup
-                </button>
-              </Link>
-            </div>
+            <div className="mt-8 flex justify-center space-x-6">
+  <Link href="/loginpage">
+    <button className="border border-black px-6 py-3 rounded-lg hover:bg-black hover:text-white transition-colors">
+      Login
+    </button>
+  </Link>
+  <Link href="/signuppage">
+    <button className="bg-black text-white px-6 py-3 rounded-lg hover:bg-white hover:text-black border border-black transition-colors">
+      Signup
+    </button>
+  </Link>
+</div>
+
           </div>
         )}
       </header>
