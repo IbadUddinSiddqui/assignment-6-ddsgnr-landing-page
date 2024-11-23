@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 const Courses = () => {
   // State to manage the visibility of the courses
@@ -25,7 +26,22 @@ const Courses = () => {
     'Programming & Development',
     'Cybersecurity',
   ];
-
+  const imageArray = [
+    "/course1.svg",
+    "/course2.svg",
+    "/course3.svg",
+    "/course4.svg",
+    "/course5.svg",
+    "/course6.svg",
+    "/course7.svg",
+    "/course8.svg",
+    "/course9.svg",
+    "/course5.svg",
+    "/course2.svg",
+    "/course7.svg",
+    
+  ];
+  
   return (
     <div className="container mx-auto px-4 py-12">
       <div className="text-center mb-10">
@@ -34,11 +50,47 @@ const Courses = () => {
       </div>
 
       {/* Grid for larger screens */}
-      <div className="hidden md:grid md:grid-cols-3 lg:grid-cols-3 gap-8">
+      <div className="hidden md:hidden lg:grid lg:grid-cols-3 lg:grid-cols-3 gap-8">
+        
         {courses.slice(0, showAll ? courses.length : 9).map((course, index) => (
             
           <div key={index} className="bg-[#F7F7F7] shadow-lg  p-6 transform transition-transform hover:scale-105 hover:shadow-xl flex items justify-center">
-            <div className="w-20 h-20 bg-white rounded-md mb-4"></div>
+            <div className="w-20 h-20 bg-white rounded-md mb-4">
+           
+        <div key={index} className="flex justify-center items-center">
+          <Image 
+            src={imageArray[index]} 
+            alt={`Image ${course}`} 
+            width={30} 
+            height={20} 
+            className="object-cover mt-6" 
+          />
+        </div>
+      
+            </div>
+            <div className='flex flex-col m-4'>
+            <h3 className="text-xl font-semibold mb-2">{course}</h3>
+            <p className="text-gray-500">50+ Courses Available</p></div>
+          </div>
+        ))}
+      </div>
+
+      {/* Grid for larger screens */}
+      <div className="hidden md:grid md:grid-cols-2 md:grid-cols-2 gap-8 lg:hidden">
+        {courses.slice(0, showAll ? courses.length : 6).map((course, index) => (
+            
+          <div key={index} className="bg-[#F7F7F7] shadow-lg  p-6 transform transition-transform hover:scale-105 hover:shadow-xl flex items justify-center">
+            <div className="w-20 h-20 bg-white rounded-md mb-4">
+            <div key={index} className="flex justify-center items-center">
+          <Image 
+            src={imageArray[index]} 
+            alt={`Image ${course}`} 
+            width={30} 
+            height={20} 
+            className="object-cover mt-6" 
+          />
+        </div>
+            </div>
             <div className='flex flex-col m-4'>
             <h3 className="text-xl font-semibold mb-2">{course}</h3>
             <p className="text-gray-500">50+ Courses Available</p></div>
@@ -50,7 +102,17 @@ const Courses = () => {
       <div className="md:hidden grid grid-cols-1 gap-8">
         {courses.slice(0, showAll ? courses.length : 3).map((course, index) => (
           <div key={index} className="bg-[#F7F7F7] shadow-lg  p-6 transform transition-transform hover:scale-105 hover:shadow-xl flex items justify-center">
-          <div className="w-20 h-20 bg-white rounded-md mb-4"></div>
+          <div className="w-20 h-20 bg-white rounded-md mb-4">
+          <div key={index} className="flex justify-center items-center">
+          <Image 
+            src={imageArray[index]} 
+            alt={`Image ${course}`} 
+            width={30} 
+            height={20} 
+            className="object-cover mt-6" 
+          />
+        </div>
+          </div>
           <div className='flex flex-col m-4'>
           <h3 className="text-xl font-semibold mb-2">{course}</h3>
           <p className="text-gray-500">50+ Courses Available</p></div>
