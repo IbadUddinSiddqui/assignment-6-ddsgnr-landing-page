@@ -139,7 +139,7 @@ const CourseTabs: React.FC = () => {
       {/* Course Details */}
       <div className="flex flex-col flex-grow">
         <div className='flex items-center justify-between'>        <p className="text-sm text-gray-500 mb-1">{course.type}</p>
-        <Image width="48" height="24"src='/Star.svg' className="text-sm text-gray-500 mb-1"></Image></div>
+        <Image width="48" height="24"src='/Star.svg'alt="star-rating" className="text-sm text-gray-500 mb-1"></Image></div>
 
        
         <h4 className="text-xl font-semibold mb-2">{course.title}</h4>
