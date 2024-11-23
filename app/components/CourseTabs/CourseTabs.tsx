@@ -73,11 +73,11 @@ const CourseTabs: React.FC = () => {
   };
 
   return (
-    <div className=" mx-auto mt-16">
+    <div className=" mx-auto mt-16 max-w-screen overflow-hidden">
       <h3 className='text-center text-4xl font-semibold font-roboto'>Courses</h3>
       <p className='text-center text-base'> Your Ultimate Guide to learning</p>
       {/* Tab Navigation */}
-      <div className="relative w-[40%] mx-auto  mt-6">
+      <div className="relative md:w-[40%]  mx-auto  mt-6">
         <div className="flex justify-around">
           <button
             className={`px-4 py-2   ${

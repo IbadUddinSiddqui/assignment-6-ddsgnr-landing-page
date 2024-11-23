@@ -176,11 +176,11 @@ const TestimonialCard: React.FC = () => {
       </p>
 
       {/* Testimonial Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center ">
         {currentTestimonials.map((testimonial, index) => (
           <div
             key={index}
-            className="p-6 w-96 bg-[#F7F7F7] border border-black rounded-sm shadow-lg"
+            className="p-6  bg-[#F7F7F7] border border-black w-72 md:w-80 lg:w-80 xl:w-96 2xl:w-[420px] rounded-sm shadow-lg"
           >
             <div className="flex mb-4">
               {Array.from({ length: 5 }).map((_, i) => (
@@ -217,7 +217,7 @@ const TestimonialCard: React.FC = () => {
         {Array.from({ length: totalPages }).map((_, index) => (
           <div
             key={index}
-            className={`w-3 h-3 mx-1 rounded-full ${
+            className={`w-2 h-2 mx-1 rounded-full ${
               index === currentPage ? "bg-black" : "bg-gray-300"
             }`}
           />
@@ -226,11 +226,11 @@ const TestimonialCard: React.FC = () => {
 
       {/* Navigation Buttons */}
       <div className="mt-6 ">
-      <div className="absolute right-8 bottom-8 px-16 text-3xl flex space-x-4">
+      <div className="absolute right-8 bottom-8   text-3xl flex space-x-4">
         <button
           onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 0))}
           disabled={isPrevDisabled}
-          className={`px-4  py-4   ${
+          className={`px-4  py-4 text-xl md:text-2xl lg:text-3xl ${
             isPrevDisabled
               ? "opacity-50 cursor-not-allowed"
               : "hover:text-gray-500"
@@ -245,7 +245,7 @@ const TestimonialCard: React.FC = () => {
             )
           }
           disabled={isNextDisabled}
-          className={`px-4 py-4 text-3xl ${
+          className={`px-2 py-4 text-xl md:text-2xl lg:text-3xl ${
             isNextDisabled
               ? "opacity-50 cursor-not-allowed"
               : "hover:text-gray-500"
