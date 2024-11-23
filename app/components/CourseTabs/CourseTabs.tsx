@@ -130,7 +130,7 @@ const CourseTabs: React.FC = () => {
       {/* Course Image */}
       <Image
       width="416" height="300"
-        src={`/image${index + 1}.svg`} // Replace with your image source
+        src={`/Image${index + 1}.svg`} 
         alt={course.title}
         className="w-[100%] h-56 object-cover  mb-4"
       />

@@ -38,8 +38,8 @@ function Team() {
               <h3 className="text-lg font-semibold">{team.name}</h3>
               <p className="text-sm text-gray-600">{team.des}</p>
               <div className='flex items-center justify-center mt-6'>
-              <Link href='/'><Image width="24" height="24"  src="/linkedin.svg" alt="linkedin link" /></Link>
-              <Link href='/'><Image  width="24" height="24"  src="/twitter.svg" alt="twitter link" /></Link>
+              <Link href='/'><Image width="24" height="24"  src="/Linkedin.svg" alt="linkedin link" /></Link>
+              <Link href='/'><Image  width="24" height="24"  src="/Twitter.svg" alt="twitter link" /></Link>
               <Link href='/'><Image width="24" height="24"  src="/web.svg" alt="web link" /></Link>
               </div></div>
           ))}
