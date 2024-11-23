@@ -9,7 +9,7 @@ function Footer() {
       <div className='w-full ml-12 md:ml-16 flex flex-col md:flex-row w-[50%] justify-between items-center'>
         {/* Left side content */}
         <div className='text-center mb-8 -ml-16 md:ml-16 sm:flex-col md:flex-row '>
-          <p className='font-semibold text-center md:text-left text-[18px]'>Subscribe to our newsletter</p>
+          <p className='font-semibold text-center md:text-left text-[18px] text-black'>Subscribe to our newsletter</p>
           <p className='text-[14px] text-gray-600 '>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
         </div>
 
@@ -27,14 +27,14 @@ function Footer() {
           <button className='bg-white md:ml-2 w-full  text-black px-2 py-2 rounded-sm border-[1px] border-black hover:bg-black hover:text-white'>
             Subscribe
           </button></div>
-          <p className='text-[12px] text-center'>By Subscribing you agree to our privacy policy</p></div>  
+          <p className='text-[12px] text-center text-black'>By Subscribing you agree to our privacy policy</p></div>  
 
         </div>
       </div>
 
       <div className='grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-4 p-4 '>
       <div className='flex justify-center '>  <div className=''><img src='/logo.png' alt='logo '  /></div></div>
-        <div className='flex flex-col  text-center md:text-left '>
+        <div className='flex flex-col  text-center md:text-left text-black '>
             <h4 className='font-semibold my-3  '>Courses</h4>
             <Link href='/' className='my-2  '>Bussiness</Link>
             <Link href='/' className='my-2'>Development</Link>
@@ -42,7 +42,7 @@ function Footer() {
             <Link href='/' className='my-2'>Design</Link>
             <Link href='/' className='my-2'>Programming</Link>
         </div>
-        <div className='flex flex-col  text-center md:text-left  '>
+        <div className='flex flex-col  text-center md:text-left text-black '>
             <h4 className='font-semibold my-3'>Resources</h4>
             <Link href='/' className='my-2'>Career</Link>
             <Link href='/' className='my-2'>Resume</Link>
@@ -50,7 +50,7 @@ function Footer() {
             <Link href='/' className='my-2'>Interview Prepration</Link>
             <Link href='/' className='my-2'>Jobs</Link>
         </div>
-        <div className='flex flex-col  text-center md:text-left  '>
+        <div className='flex flex-col  text-center md:text-left text-black '>
             <h4 className='font-semibold my-3'>About us</h4>
             <Link href='/' className='my-2'>Contact</Link>
             <Link href='/' className='my-2'>Help /Support</Link>

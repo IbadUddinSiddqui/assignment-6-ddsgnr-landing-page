@@ -168,10 +168,10 @@ const TestimonialCard: React.FC = () => {
 
   return (
     <div className="relative bg-[#F7F7F7] p-8">
-      <h2 className="text-left text-4xl ml-4 m-2 font-medium">
+      <h2 className="text-left text-4xl ml-4 m-2 font-medium text-black">
         Customer Testimonials
       </h2>
-      <p className="text-left text-xl m-4">
+      <p className="text-left text-xl m-4 text-black">
         See what our customers have to say about us.
       </p>
 
@@ -203,7 +203,7 @@ const TestimonialCard: React.FC = () => {
                 className="w-16 h-16 rounded-full border border-black mr-4"
               />
               <div>
-                <h3 className="text-lg font-semibold">{testimonial.name}</h3>
+                <h3 className="text-lg font-semibold text-black">{testimonial.name}</h3>
                 <p className="text-sm text-gray-600">{testimonial.designation}</p>
               </div>
             </div>
@@ -230,7 +230,7 @@ const TestimonialCard: React.FC = () => {
         <button
           onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 0))}
           disabled={isPrevDisabled}
-          className={`px-4  py-4 text-[22px] md:text-2xl lg:text-3xl ${
+          className={`px-4 text-black  py-4 text-[22px] md:text-2xl lg:text-3xl ${
             isPrevDisabled
               ? "opacity-50 cursor-not-allowed"
               : "hover:text-gray-500"
@@ -245,7 +245,7 @@ const TestimonialCard: React.FC = () => {
             )
           }
           disabled={isNextDisabled}
-          className={`px-2 py-4 text-[22px] md:text-2xl lg:text-3xl ${
+          className={`px-2 py-4 text-[22px] text-black md:text-2xl lg:text-3xl ${
             isNextDisabled
               ? "opacity-50 cursor-not-allowed"
               : "hover:text-gray-500"

@@ -18,8 +18,8 @@ function Team() {
   return (
     <>
       <div className=" w-full mt-16 bg-[#F7F7F7]">
-        <h2 className="font-bold text-center mt-16 p-4 text-4xl">Our Team</h2>
-        <p className="text-base mt-4 text-center">
+        <h2 className="font-bold text-center mt-16 p-4 text-4xl text-black">Our Team</h2>
+        <p className="text-base mt-4 text-center text-black">
           Lorem ipsum dolor sit amet, consectetur adipisicing.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
@@ -33,7 +33,7 @@ function Team() {
               height="80"
                 src={team.img}
                 alt={team.name}
-                className=" mx-auto  mb-4"
+                className=" mx-auto text-black mb-4"
               />
               <h3 className="text-lg font-semibold">{team.name}</h3>
               <p className="text-sm text-gray-600">{team.des}</p>

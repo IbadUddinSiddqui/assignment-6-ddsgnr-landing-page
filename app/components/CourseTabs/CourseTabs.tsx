@@ -142,7 +142,7 @@ const CourseTabs: React.FC = () => {
         <Image width="48" height="24"src='/Star.svg'alt="star-rating" className="text-sm text-gray-500 mb-1"></Image></div>
 
        
-        <h4 className="text-xl font-semibold mb-2">{course.title}</h4>
+        <h4 className="text-xl font-semibold mb-2 text-white">{course.title}</h4>
         <p className="text-sm text-gray-700 mb-4">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum vero ut
           tenetur aliquid?

@@ -69,7 +69,7 @@ const Courses = () => {
       
             </div>
             <div className='flex flex-col m-4'>
-            <h3 className="text-xl font-semibold mb-2">{course}</h3>
+            <h3 className="text-xl font-semibold mb-2 text-white">{course}</h3>
             <p className="text-gray-500">50+ Courses Available</p></div>
           </div>
         ))}
