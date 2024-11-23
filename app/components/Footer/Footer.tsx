@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
@@ -67,10 +68,10 @@ function Footer() {
             <Link href='/'>Terms Of Services</Link> 
             <Link href='/'>Cookie Setting</Link> </div> 
             <div className='flex items-center justify-center m-4'>
-                <img src='/facebook.svg'/>
-                <img src='/instagram.svg'/>
-                <img src='/twitter.svg'/>
-                <img src='/linkedin.svg'/>
+                <Image width="24" height="24"  alt="logo" src='/facebook.svg'/>
+                <Image width="24" height="24"  alt="logo"src='/instagram.svg'/>
+                <Image width="24" height="24"  alt="logo" src='/twitter.svg'/>
+                <Image width="24" height="24"  alt="logo"src='/linkedin.svg'/>
             </div>
             </div>
     </>)

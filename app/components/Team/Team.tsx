@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
@@ -27,7 +28,9 @@ function Team() {
               key={index}
               className="bg-[#F7F7F7]  p-6 text-center rounded-md"
             >
-              <img
+              <Image
+              width="80"
+              height="80"
                 src={team.img}
                 alt={team.name}
                 className=" mx-auto  mb-4"
@@ -35,9 +38,9 @@ function Team() {
               <h3 className="text-lg font-semibold">{team.name}</h3>
               <p className="text-sm text-gray-600">{team.des}</p>
               <div className='flex items-center justify-center mt-6'>
-              <Link href='/'><img src="/linkedin.svg" alt="linkedin link" /></Link>
-              <Link href='/'><img src="/twitter.svg" alt="twitter link" /></Link>
-              <Link href='/'><img src="/web.svg" alt="web link" /></Link>
+              <Link href='/'><Image width="24" height="24"  src="/linkedin.svg" alt="linkedin link" /></Link>
+              <Link href='/'><Image  width="24" height="24"  src="/twitter.svg" alt="twitter link" /></Link>
+              <Link href='/'><Image width="24" height="24"  src="/web.svg" alt="web link" /></Link>
               </div></div>
           ))}
         </div>

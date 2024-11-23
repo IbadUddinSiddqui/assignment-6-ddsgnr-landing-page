@@ -124,7 +124,7 @@ const Courses = () => {
       <div className="mt-8 text-center">
         <button
           onClick={toggleCourses}
-          className="bg-black text-white px-6 py-3 rounded-md font-medium hover:bg-white hover:text-black transition-colors duration-300 border-2 border-black"
+          className="bg-white text-black px-6 py-3 rounded-md font-medium hover:bg-black hover:text-white transition-colors duration-300 border-2 border-black"
         >
           {showAll ? 'View Fewer Courses' : 'View All Courses'}
         </button>

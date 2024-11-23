@@ -1,4 +1,5 @@
 "use client";
+import Image from 'next/image';
 import React, { useState } from 'react';
 
 // Define the type for the course , 
@@ -127,7 +128,8 @@ const CourseTabs: React.FC = () => {
       className="bg-[#F7F7F7] shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col"
     >
       {/* Course Image */}
-      <img
+      <Image
+      width="416" height="300"
         src={`/image${index + 1}.svg`} // Replace with your image source
         alt={course.title}
         className="w-[100%] h-56 object-cover  mb-4"
