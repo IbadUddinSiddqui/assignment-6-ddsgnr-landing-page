@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import React, { useState } from 'react';
 
+
 // Define the type for the course , 
 interface Course {
   title: string;
@@ -138,7 +139,7 @@ const CourseTabs: React.FC = () => {
       {/* Course Details */}
       <div className="flex flex-col flex-grow">
         <div className='flex items-center justify-between'>        <p className="text-sm text-gray-500 mb-1">{course.type}</p>
-        <img src='/star.svg' className="text-sm text-gray-500 mb-1"></img></div>
+        <Image width="48" height="24"src='/Star.svg' className="text-sm text-gray-500 mb-1"></Image></div>
 
        
         <h4 className="text-xl font-semibold mb-2">{course.title}</h4>

@@ -230,7 +230,7 @@ const TestimonialCard: React.FC = () => {
         <button
           onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 0))}
           disabled={isPrevDisabled}
-          className={`px-4  py-4 text-xl md:text-2xl lg:text-3xl ${
+          className={`px-4  py-4 text-[22px] md:text-2xl lg:text-3xl ${
             isPrevDisabled
               ? "opacity-50 cursor-not-allowed"
               : "hover:text-gray-500"
@@ -245,7 +245,7 @@ const TestimonialCard: React.FC = () => {
             )
           }
           disabled={isNextDisabled}
-          className={`px-2 py-4 text-xl md:text-2xl lg:text-3xl ${
+          className={`px-2 py-4 text-[22px] md:text-2xl lg:text-3xl ${
             isNextDisabled
               ? "opacity-50 cursor-not-allowed"
               : "hover:text-gray-500"
