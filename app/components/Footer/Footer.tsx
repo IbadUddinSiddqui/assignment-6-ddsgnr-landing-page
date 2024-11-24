@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import { Button } from '@/components/ui/button'
 
 function Footer() {
   return (
@@ -24,9 +25,12 @@ function Footer() {
           /></div>
           <div className='flex flex-col mt-12 '>
             <div className=' w-96 md:w-48 mb-3 '>
-          <button className='bg-white md:ml-2 w-full  text-black px-2 py-2 rounded-sm border-[1px] border-black hover:bg-black hover:text-white'>
+          <Button 
+          size="lg"
+          variant = "outline"
+          className='bg-white md:ml-2 w-full  text-black px-2 py-2 rounded-sm border-[1px] border-black hover:bg-black hover:text-white'>
             Subscribe
-          </button></div>
+          </Button></div>
           <p className='text-[12px] text-center text-black'>By Subscribing you agree to our privacy policy</p></div>  
 
         </div>

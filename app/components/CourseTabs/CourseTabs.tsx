@@ -1,6 +1,7 @@
 "use client";
 import Image from 'next/image';
 import React, { useState } from 'react';
+import { Button } from '@/components/ui/button';
 
 
 // Define the type for the course , 
@@ -51,7 +52,7 @@ const coursesData: Record<string, Course[]> = {
 const CourseTabs: React.FC = () => {
   // State to manage the active tab
   const [activeTab, setActiveTab] = useState<'popular' | 'newest' | 'cheapest'>('popular');
-  const [showAll, setShowAll] = useState(false); // State to control "View More" button
+  const [showAll, setShowAll] = useState(false); // State to control "View More" Button
 
   // Function to handle tab click
   const handleTabClick = (tab: 'popular' | 'newest' | 'cheapest') => {
@@ -81,6 +82,7 @@ const CourseTabs: React.FC = () => {
       <div className="relative md:w-[40%]  mx-auto  mt-6">
         <div className="flex justify-around">
           <button
+        
             className={`px-4 py-2   ${
               activeTab === 'popular'
               ? 'bg-white text-black'
@@ -101,6 +103,7 @@ const CourseTabs: React.FC = () => {
             Recommended
           </button>
           <button
+         
             className={`px-4 py-2  ${
               activeTab === 'cheapest'
               ? 'bg-white text-black'
@@ -148,9 +151,11 @@ const CourseTabs: React.FC = () => {
           tenetur aliquid?
         </p>
         <div className='flex justify-between items-center'>
-        <button className="bg-white text-black px-6   border-2 border-black py-2 rounded-md hover:bg-black hover:text-white">
+        <Button 
+        variant="outline"
+        className="">
           Enroll Now
-        </button>
+        </Button>
         <p className="text-lg  font-medium text-gray-700 ">
           Price: {course.price}
         </p></div>
@@ -162,12 +167,13 @@ const CourseTabs: React.FC = () => {
 {/* View More Button */}
 {(!showAll||showAll) && (
         <div className="text-center mt-6">
-          <button
-            className="bg-white text-black px-6   border-2 border-black py-2 rounded-md hover:bg-black hover:text-white"
+          <Button
+          variant="outline"
+            className=""
             onClick={() => setShowAll(!showAll)}
           >
             {showAll? "View Fewer Courses" : "View more Courses"}
-          </button>
+          </Button>
         </div>
       )}
 

@@ -1,6 +1,8 @@
 "use client";
 import React, { useState } from 'react';
 import Image from 'next/image';
+import { Button } from "@/components/ui/button"
+
 
 const Courses = () => {
   // State to manage the visibility of the courses
@@ -122,12 +124,13 @@ const Courses = () => {
 
       {/* Button to show more courses */}
       <div className="mt-8 text-center">
-        <button
+        <Button
+      variant="outline" 
           onClick={toggleCourses}
-          className="bg-white text-black px-6 py-3 rounded-md font-medium hover:bg-black hover:text-white transition-colors duration-300 border-2 border-black"
+          // className="bg-white text-black px-6 py-3 rounded-md font-medium hover:bg-black hover:text-white transition-colors duration-300 border-2 border-black"
         >
           {showAll ? 'View Fewer Courses' : 'View All Courses'}
-        </button>
+        </Button>
       </div>
     </div>
   );

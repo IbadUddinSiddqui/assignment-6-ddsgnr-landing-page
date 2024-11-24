@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import { Button } from '@/components/ui/button';
 
 const HeroSection = () => {
   return (
@@ -15,14 +16,20 @@ const HeroSection = () => {
           </p>
           <div className="mt-8 flex flex-col lg:flex-row justify-center items-center gap-6 lg:gap-8">
             <Link href="/signuppage">
-              <button className="bg-black text-white lg:px-8 lg:py-4 md:px-6 md:py-3  px-6 py-3 rounded-lg hover:bg-white hover:text-black border border-black transition-all duration-300 ease-in-out w-full sm:w-auto focus:outline-none focus:ring-2 focus:ring-black">
+              <Button 
+              size="xl"
+              variant="outline"
+              className="bg-black min-w-48 text-white lg:px-8 lg:py-4 md:px-6 md:py-3  px-6 py-3 rounded-lg hover:bg-white hover:text-black border border-black transition-all duration-300 ease-in-out w-full sm:w-auto focus:outline-none focus:ring-2 focus:ring-black">
                 Start learning now
-              </button>
+              </Button>
             </Link>
             <Link href="/loginpage">
-              <button className="border border-black text-black lg:px-8 lg:py-4 md:px-6 md:py-3 px-6 py-3 rounded-lg hover:bg-black hover:text-white transition-all duration-300 ease-in-out w-full sm:w-auto focus:outline-none focus:ring-2 focus:ring-black">
+              <Button
+              size="xl"
+              variant="outline"
+               className="bg-black min-w-48 text-white lg:px-8 lg:py-4 md:px-6 md:py-3  px-6 py-3 rounded-lg hover:bg-white hover:text-black border border-black transition-all duration-300 ease-in-out w-full sm:w-auto focus:outline-none focus:ring-2 focus:ring-black">
                 Explore Courses
-              </button>
+              </Button>
             </Link>
           </div>
         </div>
