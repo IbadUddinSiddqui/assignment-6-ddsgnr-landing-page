@@ -11,7 +11,7 @@ const teamMembers = [
   { img: '/pfp4.svg', name: 'Stephen Kerubo', des: 'President of Sales' },
   { img: '/pfp5.svg', name: 'John Lebo', des: 'Dog Trainer' },
 
-  // Add more team members as needed
+  
 ];
 
 function Team() {

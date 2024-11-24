@@ -13,7 +13,7 @@ const Courses = () => {
     setShowAll(!showAll);
   };
 
-  // Course data for demonstration (replace with actual data)
+  // Course data for demonstration 
   const courses = [
     'Design & Development',
     'Marketing & Sales',
