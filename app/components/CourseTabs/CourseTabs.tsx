@@ -75,7 +75,7 @@ const CourseTabs: React.FC = () => {
   };
 
   return (
-    <div className=" mx-auto mt-16 max-w-screen overflow-hidden">
+    <div className=" mx-auto  mt-16 max-w-screen overflow-hidden" id='services'>
       <h3 className='text-center text-4xl font-semibold font-roboto'>Courses</h3>
       <p className='text-center text-base'> Your Ultimate Guide to learning</p>
       {/* Tab Navigation */}

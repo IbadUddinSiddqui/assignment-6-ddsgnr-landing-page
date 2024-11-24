@@ -184,7 +184,7 @@ const TestimonialCard: React.FC = () => {
   const isNextDisabled = startIndex + testimonialsPerPage >= testimonials.length;
 
   return (
-    <div className="relative bg-[#F7F7F7] p-8">
+    <div className="relative bg-[#F7F7F7] p-8" id="testimonial">
       <h2 className="text-left text-4xl ml-4 m-2 font-medium text-black">
         Customer Testimonials
       </h2>

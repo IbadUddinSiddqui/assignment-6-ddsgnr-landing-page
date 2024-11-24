@@ -17,7 +17,7 @@ const teamMembers = [
 function Team() {
   return (
     <>
-      <div className=" w-full mt-16 bg-[#F7F7F7]">
+      <div className=" w-full mt-16 bg-[#F7F7F7]" id='aboutus'>
         <h2 className="font-bold text-center mt-16 p-4 text-4xl text-black">Our Team</h2>
         <p className="text-base mt-4 text-center text-black">
           Lorem ipsum dolor sit amet, consectetur adipisicing.

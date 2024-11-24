@@ -45,7 +45,7 @@ const Courses = () => {
   ];
   
   return (
-    <div className="container mx-auto px-4 py-12">
+    <div className="container mx-auto px-4 py-12" id='courses'>
       <div className="text-center mb-10">
         <h1 className="text-4xl font-bold font-roboto mb-4">Explore Courses By Category</h1>
         <p className="text-xl text-gray-600">Discover a wide range of courses covering various subjects, taught by expert instructors.</p>
