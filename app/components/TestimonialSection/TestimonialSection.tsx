@@ -227,44 +227,44 @@ const TestimonialCard: React.FC = () => {
           </div>
         ))}
       </div> */}
-<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
-  {currentTestimonials.map((testimonial, index) => (
-    <div
-      key={index}
-      className="p-6 bg-[#F7F7F7] border border-black rounded-sm shadow-lg w-full max-w-xs sm:max-w-sm md:max-w-md h-auto lg:h-[300px] flex flex-col justify-between"
-    >
-      <div>
-        <div className="flex mb-4">
-          {Array.from({ length: 5 }).map((_, i) => (
-            <svg
-              key={i}
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill={i < testimonial.rating ? "black" : "white"}
-              className="w-6 h-6"
-            >
-              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-            </svg>
-          ))}
-        </div>
-        <p className="text-left text-gray-800 text-lg italic mb-6">{`"${testimonial.review}"`}</p>
-      </div>
-      <div className="flex items-center">
-        <img
-          src={testimonial.avatar}
-          alt={`${testimonial.name}'s avatar`}
-          className="w-16 h-16 rounded-full border border-black mr-4"
-        />
-        <div>
-          <h3 className="text-lg font-semibold text-black">{testimonial.name}</h3>
-          <p className="text-sm text-gray-600">{testimonial.designation}</p>
-        </div>
-      </div>
+       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
+      {currentTestimonials.map((testimonial, index) => (
+        <Card
+          key={index}
+          className="p-6 bg-[#F7F7F7] border  border-black w-72 md:w-80 lg:w-80 xmd:w-[360px] xl:w-[420px] 2xl:w-[420px] rounded-sm shadow-lg"
+        >
+          <CardHeader>
+            <div className="flex mb-4">
+              {Array.from({ length: 5 }).map((_, i) => (
+                <svg
+                  key={i}
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill={i < testimonial.rating ? "black" : "gray"}
+                  className="w-6 h-6"
+                >
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              ))}
+            </div>
+          </CardHeader>
+          <CardContent>
+            <p className="text-left text-gray-800 text-lg italic mb-6">{`"${testimonial.review}"`}</p>
+            <div className="flex items-center">
+              <img
+                src={testimonial.avatar}
+                alt={`${testimonial.name}'s avatar`}
+                className="w-16 h-16 rounded-full border border-black mr-4"
+              />
+              <div>
+                <h3 className="text-lg font-semibold text-black">{testimonial.name}</h3>
+                <p className="text-sm text-gray-600">{testimonial.designation}</p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      ))}
     </div>
-  ))}
-</div>
-
-
 
       {/* Pagination Dots */}
       <div className="flex flex-start ml-8 ">

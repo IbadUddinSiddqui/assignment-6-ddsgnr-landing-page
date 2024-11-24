@@ -9,6 +9,10 @@ export default {
   ],
   theme: {
   	extend: {
+		screens: {
+			xmd: '1148px', // Custom breakpoint for 1148px
+		  },
+	
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
