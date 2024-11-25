@@ -11,6 +11,7 @@ export default {
   	extend: {
 		screens: {
 			xmd: '1148px', // Custom breakpoint for 1148px
+			xxl: "1536px"
 		  },
 	
   		colors: {

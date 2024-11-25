@@ -6,9 +6,9 @@ const HeroSection = () => {
   return (
     <section className="w-full flex flex-col md:grid md:grid-cols-2 bg-gray-50">
       {/* Left Section (Text) */}
-      <div className="w-full px-6 py-12 flex justify-center items-center text-center lg:text-left">
+      <div className="w-full px-6 h-[90%] 2xl:h-[80%] py-12 flex justify-center items-center  text-center lg:text-left">
         <div>
-          <h1 className="font-roboto font-bold text-5xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-black leading-tight">
+          <h1 className="font-roboto font-bold text-5xl  sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-7xl text-black leading-tight">
             Learn new skills <br />online with ease
           </h1>
           <p className="font-roboto  text-xl sm:text-xl md:text-base text-black opacity-75 max-w-lg lg:text-xl 2xl:text-xl mx-auto">
@@ -36,8 +36,8 @@ const HeroSection = () => {
       </div>
 
       {/* Right Section (Image) */}
-      <div className="w-full h-auto overflow-hidden flex justify-center items-center">
-        <img src="/hero1.svg" alt="hero" className="w-full h-full object-cover object-top sm:h-[]" />
+      <div className=" w-full h-full  mr-0 overflow-hidden flex justify-center items-center">
+        <img src="/hero1.svg" alt="hero" className="w-full h-full   object-cover object-top sm:h-[]" />
       </div>
     </section>
   );
